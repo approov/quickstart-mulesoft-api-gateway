@@ -86,8 +86,8 @@ Choose the one you feel more comfortable with, you will get the same outcome eit
 Command:
 
 ```text
-git clone https://github.com/approov/quickstart-mulesoft-api-gateway-v2.git
-cd quickstart-mulesoft-api-gateway-v2
+git clone https://github.com/approov/quickstart-mulesoft-api-gateway.git
+cd quickstart-mulesoft-api-gateway
 ```
 
 ### Setup the Environment Variables
