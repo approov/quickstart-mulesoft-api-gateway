@@ -2,7 +2,7 @@
 
 This example is for developers not familiar with Mulesoft API Gateway who are looking for a step by step tutorial on how they can create an API project with an [Approov](https://approov.io) token check.
 
-By following this example you will create an API that will act as a [Reverse Proxy](https://blog.approov.io/using-a-reverse-proxy-to-protect-third-party-apis) to an unprotected API. The proxy will only forward requests made by your mobile app.
+By following this example you will create an API that will act as a [Reverse Proxy](https://approov.io/blog//using-a-reverse-proxy-to-protect-third-party-apis) to an unprotected API. The proxy will only forward requests made by your mobile app.
 
 The reverse proxy with an Approov token check that is built here can also be used in other circumstances where the target of a request needs to be protected from bots, scripts, or other malicious accesses. For example, the target could be another backend, managed by you or someone else. The Approov integration steps will be the same no matter what type of backend the reverse proxy is configured to access.
 
@@ -22,16 +22,16 @@ The reverse proxy with an Approov token check that is built here can also be use
 
 ## Why?
 
-To lock down your API server to your mobile app. Please read the brief summary in the [README](/README.md#why) at the root of this repo or visit our [website](https://approov.io/product.html) for more details.
+To lock down your API server to your mobile app. Please read the brief summary in the [Approov Overview](/OVERVIEW.md#why) at the root of this repo or visit our [website](https://approov.io/product) for more details.
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
 
 
 ## How it works?
 
-For more background, see the overview in the [README](/README.md#how-it-works) at the root of this repo.
+For more background, see the [Approov Overview](/OVERVIEW.md#how-it-works) at the root of this repo.
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
 
 
 ## Requirements
@@ -48,7 +48,7 @@ This guide was tested with the following Operating Systems:
 * MacOS Big Sur
 * Windows 10 WSL2 - Ubuntu 20.04
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
 
 
 ## How to Follow the Instructions
@@ -76,7 +76,7 @@ anypoint-cli api-mgr api deploy \
 Choose the one you feel more comfortable with, you will get the same outcome either way.
 
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
 
 
 ## Setup
@@ -129,9 +129,7 @@ To use the Appoov CLI in the next steps you need to enable the role under which 
 Enable your Approov `admin` role with:
 
 ```bash
-# eval `approov role admin johndoe`
-# eval `approov role admin 12345678`
-eval `approov role admin ___YOUR_APPROOV_ACCOUNT_ID_HERE___`
+eval `approov role admin`
 ```
 > **NOTE:** First time that you will execute an Approov command you will be prompted for your password, authenticate your selected Approov role with your password. This will create an authenticated session that will expire in 1 hour, after which you will again be prompted for your password.
 
@@ -141,7 +139,7 @@ Feel free to use your installed `anypoint-cli`, instead of the dockerized `3.9.1
 
 If you don't have a Mulesoft account yet, then you need to [signup](https://anypoint.mulesoft.com/login/signup) for one in order to be able to use the Anypoint CLI.
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
 
 
 ## Mulesoft API Gateway
@@ -209,7 +207,7 @@ anypoint-cli api-mgr api deploy \
   ${API_INSTANCE_ID}
 ```
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
 
 
 ## Approov Token Check
@@ -284,7 +282,7 @@ anypoint-cli api-mgr policy apply \
 
 The Mulesoft platform may take more then one minute to effectively apply the policy to your API, therefore wait for one minute or two before you proceed to the next step of testing your Approov integration.
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
 
 
 ## Test your Approov Integration
@@ -340,7 +338,7 @@ curl -iX POST "http://${MULESOFT_API_DOMAIN}/anything" \
 
 The result of the cURL request should successful as defined by the protected API.
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
 
 
 ## Troubleshooting
@@ -355,4 +353,29 @@ approov api
 
 Note that `approov role .` can be used to extend an active session. See [approov role](https://approov.io/docs/latest/approov-cli-tool-reference/#role-command) documentation.
 
-[TOC](#toc-table-of-contents)
+[TOC](#toc---table-of-contents)
+
+
+## Issues
+
+If you find any issue while following our instructions then just report it [here](https://github.com/approov/quickstart-mulesoft-api-gateway/issues), with the steps to reproduce it, and we will sort it out and/or guide you to the correct path.
+
+[TOC](#toc---table-of-contents)
+
+
+## Useful Links
+
+If you wish to explore the Approov solution in more depth, then why not try one of the following links as a jumping off point:
+
+* [Approov Free Trial](https://approov.io/signup)(no credit card needed)
+* [Approov Get Started](https://approov.io/product/demo)
+* [Approov QuickStarts](https://approov.io/docs/latest/approov-integration-examples/)
+* [Approov Docs](https://approov.io/docs)
+* [Approov Blog](https://approov.io/blog/)
+* [Approov Resources](https://approov.io/resource/)
+* [Approov Customer Stories](https://approov.io/customer)
+* [Approov Support](https://approov.zendesk.com/hc/en-gb/requests/new)
+* [About Us](https://approov.io/company)
+* [Contact Us](https://approov.io/contact)
+
+[TOC](#toc---table-of-contents)
