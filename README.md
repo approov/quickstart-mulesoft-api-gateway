@@ -12,6 +12,12 @@ If you are looking for another Approov integration you can check our list of [qu
 
 The quickstart assumes that you already have an Mulesoft API Gateway running, and that you are familiar with the options for applying changes. If you are not familiar with the Mulesoft API Gateway then you may want to follow the step by step [Mulesoft API Gateway Example](docs/MULESOFT_API_GATEWAY_EXAMPLE.md) instead.
 
+The quickstart was tested with the following Operating Systems:
+
+* Ubuntu 20.04
+* MacOS Big Sur
+* Windows 10 WSL2 - Ubuntu 20.04
+
 First, setup the [Appoov CLI](https://approov.io/docs/latest/approov-installation/index.html#initializing-the-approov-cli).
 
 Next, enable your Approov `admin` role with:
