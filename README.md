@@ -18,7 +18,7 @@ The quickstart was tested with the following Operating Systems:
 * MacOS Big Sur
 * Windows 10 WSL2 - Ubuntu 20.04
 
-First, setup the [Appoov CLI](https://approov.io/docs/latest/approov-installation/index.html#initializing-the-approov-cli).
+First, setup the [Approov CLI](https://approov.io/docs/latest/approov-installation/index.html#initializing-the-approov-cli).
 
 Next, enable your Approov `admin` role with:
 

@@ -52,7 +52,7 @@ To use Approov with Mulesoft API Gateway you need a small amount of configuratio
 
 ### Approov Role
 
-To use the Appoov CLI in the next steps you need to enable the role under which you will run the commands. While the `approov api` command can be executed with the basic `dev` role, other commands will require an `admin` role, see [account access roles documentation](https://approov.io/docs/latest/approov-usage-documentation/#account-access-roles).
+To use the Approov CLI in the next steps you need to enable the role under which you will run the commands. While the `approov api` command can be executed with the basic `dev` role, other commands will require an `admin` role, see [account access roles documentation](https://approov.io/docs/latest/approov-usage-documentation/#account-access-roles).
 
 Enable your Approov `admin` role with:
 
