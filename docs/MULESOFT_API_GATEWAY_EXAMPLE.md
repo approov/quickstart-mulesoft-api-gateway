@@ -130,6 +130,12 @@ Enable your Approov `admin` role with:
 
 ```bash
 eval `approov role admin`
+````
+
+For the Windows powershell:
+
+```bash
+set APPROOV_ROLE=admin:___YOUR_APPROOV_ACCOUNT_NAME_HERE___
 ```
 > **NOTE:** First time that you will execute an Approov command you will be prompted for your password, authenticate your selected Approov role with your password. This will create an authenticated session that will expire in 1 hour, after which you will again be prompted for your password.
 

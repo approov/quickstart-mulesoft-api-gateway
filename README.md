@@ -26,6 +26,12 @@ Next, enable your Approov `admin` role with:
 eval `approov role admin`
 ````
 
+For the Windows powershell:
+
+```bash
+set APPROOV_ROLE=admin:___YOUR_APPROOV_ACCOUNT_NAME_HERE___
+````
+
 Now, register the API domain for which Approov will issues tokens:
 
 ```bash
