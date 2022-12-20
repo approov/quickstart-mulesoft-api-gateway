@@ -249,7 +249,7 @@ Add the Mulesoft API domain with:
 approov api -keySetKID ${APPROOV_KEYSET_ID} -add ${MULESOFT_API_DOMAIN}
 ```
 
-Adding the API domain also configures [dynamic certificate pinning](https://approov.io/docs/latest/approov-usage-documentation/#approov-dynamic-pinning) for the API, the apps using your API need to be modified to take advantage of this.
+Adding the API domain also configures [dynamic certificate pinning](https://approov.io/docs/latest/approov-usage-documentation/#dynamic-pinning) for the API, the apps using your API need to be modified to take advantage of this.
 
 > **NOTE:** By default the pin is extracted from the public key of the leaf certificate served by the domain, as visible to both the box issuing the Approov CLI command and the Approov servers. Other `approov` commands can modify this default.
 
